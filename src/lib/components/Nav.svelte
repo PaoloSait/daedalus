@@ -10,7 +10,7 @@
         MegaMenu,
     } from "flowbite-svelte";
     import { ChevronDownSolid } from "flowbite-svelte-icons";
-   
+
     let menu = [
         { name: "Free CBT Sessions", href: "/" },
         { name: "Free VR Psychosexual Therapy", href: "/" },
@@ -20,7 +20,7 @@
     ];
 </script>
 
-<Navbar>
+<Navbar fluid={true} class="fixed border-b top-0 z-30">
     <NavBrand href="/">
         <img
             src="/temporary_logo.png"

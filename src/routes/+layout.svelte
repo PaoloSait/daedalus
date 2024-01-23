@@ -5,7 +5,7 @@
 </script>
 
 <Nav />
-<main>
+<main class="min-h-[600px] mt-[75px]">
     <slot />
 </main>
 <Footer />
