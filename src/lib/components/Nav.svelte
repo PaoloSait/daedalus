@@ -7,7 +7,6 @@
         NavHamburger,
         Dropdown,
         DropdownItem,
-        MegaMenu,
     } from "flowbite-svelte";
     import { ChevronDownSolid } from "flowbite-svelte-icons";
 
@@ -63,13 +62,13 @@
                 class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline"
             />
         </NavLi>
-        <MegaMenu items={menu} let:item>
-            <a
-                href={item.href}
-                class="flex items-center hover:text-primary-600 dark:hover:text-primary-500"
-                >{item.name}
-            </a>
-        </MegaMenu>
+        <Dropdown offset="18">
+            <DropdownItem>Free CBT Sessions</DropdownItem>
+            <DropdownItem>Free VR Psychosexual Therapy</DropdownItem>
+            <DropdownItem>Facebook Support</DropdownItem>
+            <DropdownItem>Group Our Online Forum</DropdownItem>
+            <DropdownItem>Patient Stories</DropdownItem>
+        </Dropdown>
 
         <NavLi class="cursor-pointer">
             Research<ChevronDownSolid
@@ -80,5 +79,7 @@
             <DropdownItem>Surgical Interventions</DropdownItem>
             <DropdownItem>Stem Cell Biology</DropdownItem>
         </Dropdown>
+
+        <NavLi class="cursor-pointer" href="/">Contact</NavLi>
     </NavUl>
 </Navbar>
