@@ -1,0 +1,1 @@
+<div class="bg-[#F4F4F4] h-80"></div>

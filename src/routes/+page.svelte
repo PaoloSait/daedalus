@@ -1,15 +1,15 @@
 <script>
-    import { ImagePlaceholder, Skeleton } from "flowbite-svelte";
-
+    import Tagline from "$lib/components/Tagline.svelte";
+    import ArticlesSection from "$lib/components/ArticlesSection.svelte"
     export let data;
 </script>
 
-<div class="px-20 flex-col flex gap-4">
-    <p class="text-xl font-bold">Project Daedalus</p>
-
+<div>
+    <Tagline />
+    <ArticlesSection />
+    <div class="flex-col flex gap-4 px-10">
     {#each data.tests as test}
         <p>{test.name}</p>
     {/each}
-    <ImagePlaceholder />
-    <Skeleton size="xxl"/>
+</div>
 </div>
