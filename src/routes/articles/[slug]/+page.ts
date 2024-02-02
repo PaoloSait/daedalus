@@ -11,15 +11,14 @@ const client = createClient({
 
 
 export const load: PageLoad = async ({ params }) => {
-    const data = await client.fetch(`*[_type == "article" && url == ${params.slug}]`);
-
-    if (data) {
+    const data = await client.fetch(`*[_type == "article" && slug.current == "${params.slug}"]`);
+    if (data[0]) {
         return {
             article: data[0]
         };
     }
     return {
-        status: 500,
-        body: new Error("Internal Server Error")
+        status: 404,
+        body: new Error("Page not found")
     };
 };
