@@ -8,11 +8,18 @@ const client = createClient({
 });
 
 export async function load({ }) {
-    const data = await client.fetch(`*[_type == "test"]`);
-
+    const data = await client.fetch(`*[_type == "article"] | order(publishedAt desc) {
+        title,
+        body,
+        publishedAt,
+        abstract,
+        "slug": slug.current,
+        "author": *[_type == "author" && _id == ^.author._ref]
+    }[0..3]`);
+    console.log(data[0].slug)
     if (data) {
         return {
-            tests: data
+            articles: data
         };
     }
     return {

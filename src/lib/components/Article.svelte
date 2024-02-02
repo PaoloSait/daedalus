@@ -1,10 +1,20 @@
-<div class="w-full bg-white p-4 flex flex-col h-80">
+
+<script>
+    /**
+     * @type {{ title: any; }}
+     */
+     export let article;
+</script>
+
+<a href={`articles/${article.slug}`} class="w-full bg-white p-4 flex flex-col h-80 gap-2">
     <div class="bg-[#F4F4F4] h-1/2"></div>
-    <div class="font-bold mt-2"> X organisation does ABC research to show results about ?.</div>
+    <div class="font-bold"> {article.title}</div>
+        <div class=""> {article.abstract}</div>
+
     <div class="grow"></div>
     <div class="flex">
-        <div>18th Jan 2024</div>
+        <div>{article.publishedAt}</div>
         <div class="grow"></div>
         <div>4 min read</div>
     </div>
-</div>
+</a>
