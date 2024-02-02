@@ -14,6 +14,7 @@ export async function load({ }) {
         publishedAt,
         abstract,
         "slug": slug.current,
+        "imageUrl": mainImage.asset->url,
         "author": *[_type == "author" && _id == ^.author._ref]
     }[0..3]`);
     console.log(data[0].slug)

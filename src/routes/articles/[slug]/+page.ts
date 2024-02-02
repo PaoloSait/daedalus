@@ -15,6 +15,7 @@ export const load: PageLoad = async ({ params }) => {
         title,
         body,
         publishedAt,
+        "imageUrl": mainImage.asset->url,
         "author": *[_type == "author" && _id == ^.author._ref]
     }`);
     // console.log("here" + data[0].author._ref)
