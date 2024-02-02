@@ -6,7 +6,7 @@
      export let article;
 </script>
 
-<a href={`articles/${article.slug}`} class="w-full bg-white p-4 flex flex-col h-80 gap-2">
+<a href={`articles/${article.slug}`} class="w-full bg-white p-4 flex flex-col h-80 gap-2 transition ease-in-out hover:scale-105">
     <div class="bg-[#F4F4F4] h-1/2"></div>
     <div class="font-bold"> {article.title}</div>
         <div class=""> {article.abstract}</div>
