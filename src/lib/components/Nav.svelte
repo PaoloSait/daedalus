@@ -80,6 +80,6 @@
             <DropdownItem>Stem Cell Biology</DropdownItem>
         </Dropdown>
 
-        <NavLi class="cursor-pointer" href="/">Contact</NavLi>
+        <NavLi class="cursor-pointer" href="/contact">Contact</NavLi>
     </NavUl>
 </Navbar>
