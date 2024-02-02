@@ -5,13 +5,13 @@
 
     export let data: PageData;
     console.log(data);
-    console.log(data.article.author);
+    // console.log(data.article.author);
 </script>
 
 <div class="w-full flex flex-col items-center">
     <div class="max-w-[600px]">
         <div class="text-2xl font-bold">{data.article?.title}</div>
-        <div>{data.article.publishedAt} &#8226; {data.article.author}</div>
+        <div>{data.article.publishedAt} &#8226; {data.article.author[0].name}</div>
         <div class="h-[2px] mt-2 bg-gray-200"></div>
         <PortableText
             value={data.article.body}

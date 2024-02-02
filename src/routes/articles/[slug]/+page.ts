@@ -11,7 +11,12 @@ const client = createClient({
 
 
 export const load: PageLoad = async ({ params }) => {
-    const data = await client.fetch(`*[_type == "article" && slug.current == "${params.slug}"]`);
+    const data = await client.fetch(`*[_type == "article" && slug.current == "${params.slug}"] {
+        title,
+        body,
+        publishedAt,
+        "author": *[_type == "author" && _id == ^.author._ref]
+    }`);
     // console.log("here" + data[0].author._ref)
     // const moreData = await client.fetch(`*[_type == "author" && ]`);
     if (data[0]) {
