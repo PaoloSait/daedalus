@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sanity/client": "^6.11.1"
+		"@sanity/client": "^6.11.1",
+		"options": "^0.0.6"
 	}
 }

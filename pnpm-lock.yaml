@@ -8,8 +8,14 @@ dependencies:
   '@sanity/client':
     specifier: ^6.11.1
     version: 6.11.1
+  options:
+    specifier: ^0.0.6
+    version: 0.0.6
 
 devDependencies:
+  '@portabletext/svelte':
+    specifier: ^2.1.5
+    version: 2.1.5(svelte@4.2.9)
   '@sveltejs/adapter-auto':
     specifier: ^3.0.0
     version: 3.1.1(@sveltejs/kit@2.4.3)
@@ -375,6 +381,27 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: true
+
+  /@portabletext/svelte@2.1.5(svelte@4.2.9):
+    resolution: {integrity: sha512-NDHIT6TRPnWCGnr0VjwsmYtuhZRVkD41aexajtElwsVLSoYUf/mxXd6PVxjg1e12DfubQo4aQv6lpRthIVbIIA==}
+    peerDependencies:
+      svelte: '>=3.47.0 <5.0.0'
+    dependencies:
+      '@portabletext/toolkit': 2.0.10
+      svelte: 4.2.9
+    dev: true
+
+  /@portabletext/toolkit@2.0.10:
+    resolution: {integrity: sha512-d+F9JvpnMEx7kd6saZ9OWA4U1Iwuokh6TOht7iqkfWU+0ivh9yM4v+b0Kpu+iiPcElicoabhtXol+yTvWJ1jDw==}
+    engines: {node: ^14.13.1 || >=16.0.0}
+    dependencies:
+      '@portabletext/types': 2.0.8
+    dev: true
+
+  /@portabletext/types@2.0.8:
+    resolution: {integrity: sha512-eiq9/kMX2bYezS4/kLFk3xNnruCFjCDdw6aYEv5ECHVKkYROiuLd3/AsP5d7tWF3+kPPy6tB0Wq8aqDG/URHGA==}
+    engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.9.6:
@@ -1378,6 +1405,11 @@ packages:
     dependencies:
       wrappy: 1.0.2
     dev: true
+
+  /options@0.0.6:
+    resolution: {integrity: sha512-bOj3L1ypm++N+n7CEbbe473A414AB7z+amKYshRb//iuL3MpdDCLhPnw6aVTdKB9g5ZRVHIEp8eUln6L2NUStg==}
+    engines: {node: '>=0.4.0'}
+    dev: false
 
   /p-is-promise@3.0.0:
     resolution: {integrity: sha512-Wo8VsW4IRQSKVXsJCn7TomUaVtyfjVDn3nUP7kE967BQk0CwFpdbZs0X0uk5sW9mkBa9eNM7hCMaG93WUAwxYQ==}
