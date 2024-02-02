@@ -10,6 +10,7 @@
 
 <div class="w-full flex flex-col items-center my-32">
     <div class="max-w-[600px]">
+        <img class="max-h-64 mb-2" src={data.article.imageUrl} alt="">
         <div class="text-2xl font-bold">{data.article?.title}</div>
         <div>{data.article.publishedAt} &#8226; {data.article.author[0].name}</div>
         <div class="h-[2px] mt-2 bg-gray-200"></div>
