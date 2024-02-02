@@ -8,7 +8,7 @@
     // console.log(data.article.author);
 </script>
 
-<div class="w-full flex flex-col items-center">
+<div class="w-full flex flex-col items-center my-32">
     <div class="max-w-[600px]">
         <div class="text-2xl font-bold">{data.article?.title}</div>
         <div>{data.article.publishedAt} &#8226; {data.article.author[0].name}</div>
