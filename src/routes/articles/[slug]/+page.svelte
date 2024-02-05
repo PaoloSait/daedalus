@@ -4,7 +4,7 @@
     import H1 from "$lib/components/h1.svelte";
 
     export let data: PageData;
-    console.log(data);
+    // console.log(data);
     // console.log(data.article.author);
 </script>
 
