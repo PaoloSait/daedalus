@@ -38,12 +38,11 @@
                 class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline"
             />
         </NavLi>
-        <Dropdown offset="18">
-            <DropdownItem>What is Cauda Equina?</DropdownItem>
-            <DropdownItem>Cauda Equina Syndrome</DropdownItem>
+        <Dropdown offset={18}>
+            <DropdownItem>What is Cauda Equina Syndrome?</DropdownItem>
+            <DropdownItem>Symptoms</DropdownItem>
             <DropdownItem>Diagnosis</DropdownItem>
             <DropdownItem>Rehabilitation</DropdownItem>
-            <DropdownItem>Treatment</DropdownItem>
         </Dropdown>
 
         <NavLi class="cursor-pointer">
@@ -51,33 +50,23 @@
                 class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline"
             />
         </NavLi>
-        <Dropdown offset="18">
-            <DropdownItem>Urodynamics</DropdownItem>
-            <DropdownItem>Pelvic Floor Exercises</DropdownItem>
-            <DropdownItem>Spinal Cord Stimulators</DropdownItem>
+        <Dropdown offset={18}>
+            <DropdownItem>CES on the bladder</DropdownItem>
+            <DropdownItem>Management</DropdownItem>
+            <DropdownItem>Treatment</DropdownItem>
         </Dropdown>
 
         <NavLi class="cursor-pointer">
-            Support<ChevronDownSolid
+            Our Work<ChevronDownSolid
                 class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline"
             />
         </NavLi>
-        <Dropdown offset="18">
-            <DropdownItem>Free CBT Sessions</DropdownItem>
-            <DropdownItem>Free VR Psychosexual Therapy</DropdownItem>
-            <DropdownItem>Facebook Support</DropdownItem>
-            <DropdownItem>Group Our Online Forum</DropdownItem>
+        <Dropdown offset={18}>
+            <DropdownItem>CBT Sessions</DropdownItem>
+            <DropdownItem>VR Psychosexual Therapy</DropdownItem>
+            <DropdownItem>Cauda Equina Research</DropdownItem>
+            <DropdownItem>Facebook Support Group</DropdownItem>
             <DropdownItem>Patient Stories</DropdownItem>
-        </Dropdown>
-
-        <NavLi class="cursor-pointer">
-            Research<ChevronDownSolid
-                class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline"
-            />
-        </NavLi>
-        <Dropdown offset="18">
-            <DropdownItem>Surgical Interventions</DropdownItem>
-            <DropdownItem>Stem Cell Biology</DropdownItem>
         </Dropdown>
 
         <NavLi class="cursor-pointer" href="/contact">Contact</NavLi>
