@@ -7,6 +7,8 @@ const client = createClient({
     apiVersion: "2024-01-01",
     useCdn: false
 });
+export const ssr = false;
+
 
 export async function load({ }) {
     const data : Article[] = await client.fetch(`*[_type == "article"] | order(publishedAt desc) {

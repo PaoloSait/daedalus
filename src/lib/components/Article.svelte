@@ -1,11 +1,9 @@
 <script lang="ts">
     import type { Article } from "$lib";
-    import dayjs from "dayjs";
-    import relativeTime from "dayjs/plugin/relativeTime";
-    dayjs.extend(relativeTime);
+    // Article to base component on
     export let article: Article;
-    let date = dayjs(article.publishedAt).fromNow()
-    date = date.charAt(0).toUpperCase() + date.slice(1)
+    // Format date of article
+    import { format } from "timeago.js";
 </script>
 
 <a
@@ -18,8 +16,8 @@
 
     <div class="grow"></div>
     <div class="flex">
-        <div>{date}</div>
+        <div>{format(article.publishedAt)}</div>
         <div class="grow"></div>
-        <div>4 min read</div>
+        <div>{"length"}</div>
     </div>
 </a>
