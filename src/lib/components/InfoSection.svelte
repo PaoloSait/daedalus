@@ -1,6 +1,10 @@
+<script>
+    import CaseReviewBlock from "./CaseReviewBlock.svelte";
+
+</script>
 <div class="flex flex-col items-center px-40 gap-5 mt-20 relative">
-    <div class="text-3xl font-bold">What is Cauda Equina?</div>
-    <div class="text-lg">
+    <div class="text-3xl font-bold mb-8">What is Cauda Equina?</div>
+    <div class="text-lg mb-8">
         Cauda Equina Syndrome (CES) is a rare but serious medical condition that
         occurs when the nerve roots of the cauda equina, located at the base of
         the spinal cord, become compressed. This compression can result from
@@ -12,28 +16,7 @@
         CES requires prompt intervention to prevent irreversible damage to the
         nerves.
     </div>
-    <div
-        class="bg-[#CAEFFF] w-full flex flex-col rounded-xl px-4 py-4 gap-3 z-10 shadow-md"
-    >
-        <div class="text-2xl font-bold">Did you know?</div>
-        <div class="text-lg">
-            The average medical malpractice payout for children under one month
-            old is almost $1 Million. Let us help you get the payout you deserve
-        </div>
-        <a href="/contact">
-            <div
-                class="bg-black text-white font-medium px-3 py-3 rounded-lg w-min min-w-52"
-            >
-                <div class="flex flex-row gap-2">
-                    Get free case review <span
-                        class="material-symbols-outlined"
-                    >
-                        arrow_forward
-                    </span>
-                </div>
-            </div>
-        </a>
-    </div>
+    <CaseReviewBlock/>
     <div class="custom-shape-divider-bottom-1706781815">
         <svg
             data-name="Layer 1"
