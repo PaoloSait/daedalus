@@ -1,3 +1,4 @@
+import type { Article } from "$lib";
 import { createClient } from "@sanity/client";
 
 const client = createClient({
@@ -8,7 +9,7 @@ const client = createClient({
 });
 
 export async function load({ }) {
-    const data = await client.fetch(`*[_type == "article"] | order(publishedAt desc) {
+    const data : Article[] = await client.fetch(`*[_type == "article"] | order(publishedAt desc) {
         title,
         body,
         publishedAt,
@@ -25,6 +26,7 @@ export async function load({ }) {
     }
     return {
         status: 500,
-        body: new Error("Internal Server Error")
+        body: new Error("Internal Server Error"),
+        articles: []
     };
 }

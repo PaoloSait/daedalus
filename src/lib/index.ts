@@ -1,1 +1,9 @@
-// place files you want to import through the `$lib` alias in this folder.
+export interface Article {
+    slug: string;
+    imageUrl: string;
+    title: string;
+    abstract: string;
+    publishedAt: string;
+    body: string;
+    author: string;
+}

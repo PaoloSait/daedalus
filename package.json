@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^6.11.1",
+		"dayjs": "^1.11.10",
 		"options": "^0.0.6"
 	}
 }
